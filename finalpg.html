@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .slide {
+          min-width: 100%; /* Ensure each slide takes up full width */
+          transition: transform 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="relative z-10 bg-green-950 backdrop-blur-md shadow-md">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <img src="zennah render 1.91.png" alt="Logo" class="w-20 h-20 mr-2">
+            
+          </div>
+          <!-- Links -->
+          <nav class="hidden md:flex space-x-6">
+            <a href="#" class="text-white hover:text-gray-400 text-sm">About Us</a>
+            <a href="#" class="text-white hover:text-gray-400 text-sm">Feedback/Reviews</a>
+            <a href="#" class="text-white hover:text-gray-400 text-sm">Our Services</a>
+          </nav>
+          <!-- Icons -->
+          <div class="flex items-center space-x-4">
+            <a href="wishlist1.html" class="text-gray-100 hover:text-gray-400 text-lg">
+              <svg class="w-[33px] h-[33px] text-gray-800 hover:text-gray-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/>
+              </svg>
+              
+              
+            </a>
+            <button class="text-gray-100 hover:text-gray-400 text-lg">
+                <svg class="w-[33px] h-[33px] text-gray-800 hover:text-gray-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4h1.5L8 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm.75-3H7.5M11 7H6.312M17 4v6m-3-3h6"/>
+                </svg>
+            
+              
+            </button>
+            <button class="text-gray-100 hover:text-white text-lg">
+              <svg class="w-[33px] h-[33px] text-gray-800 hover:text-gray-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0a8.949 8.949 0 0 0 4.951-1.488A3.987 3.987 0 0 0 13 16h-2a3.987 3.987 0 0 0-3.951 3.512A8.948 8.948 0 0 0 12 21Zm3-11a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+              </svg>
+              
+            </button>
+          </div>
+        </div>
+      </header>
+
+    <main class="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
+        <div class="relative mt-2 mb-2">
+            <input
+              type="text"
+              placeholder="Enter your prompt and go crazy......"
+              class="w-full border-b-2 border-gray-300 focus:outline-none focus:border-black text-gray-700 placeholder-gray-400 px-12 py-2"
+            />
+            <button class="absolute right-1 top-1/4 ">
+              <svg class="absolute right-4 top-1/2 w-6 h-6 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m3 16 5-7 6 6.5m6.5 2.5L16 13l-4.286 6M14 10h.01M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"/>
+              </svg>
+            </button>
+            
+          </div>
+        <h1 class="sr-only">Product Page</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="max-w-2xl mt-10">
+                <!-- Slideshow Container -->
+                <div class="relative overflow-hidden rounded-lg bg-white shadow-md">
+                  <!-- Slides Wrapper -->
+                  <div id="slidesWrapper" class="flex transition-transform">
+                    <img src="zennah placeholder.png" alt="Ring 1" class="slide">
+                    <img src="zennah placeholder.png" alt="Ring 2" class="slide">
+                    <img src="zennah placeholder.png" alt="Ring 3" class="slide">
+                  </div>
+            
+                  <!-- Navigation Buttons -->
+                  <button id="prevBtn" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-400 bg-opacity-20 text-white rounded-full p-2 hover:bg-gray-700">
+                    ❮
+                  </button>
+                  <button id="nextBtn" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-400 bg-opacity-20 text-white rounded-full p-2 hover:bg-gray-700">
+                    ❯
+                  </button>
+            
+                  <!-- Dots -->
+                  <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                    <span class="dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer"></span>
+                    <span class="dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer"></span>
+                    <span class="dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer"></span>
+                  </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-2xl pt-4 font-semibold text-gray-800">Ring 4 | Rs 50,000</h2>
+                <p class="text-gray-600 mt-4">Story of the ring - symbolism of the design and material.</p>
+
+                <div class="mt-6">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Choose Part:</label>
+                    <input type="text" class="border-gray-300 rounded-md w-full" placeholder="Type to edit">
+
+                    <div class="mt-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Color:</label>
+                        <div class="flex space-x-4">
+                            <button class="px-4 py-2 border-2 border-green-950 text-green-950 bg-white hover:bg-rose-300 hover:text-black transition-colors duration-300">Rose Gold</button>
+                            <button class="px-4 py-2 border-2 border-green-950 text-green-950 bg-white hover:bg-yellow-300 hover:text-black transition-colors duration-300 ">Yellow Gold</button>
+                            <button class="px-4 py-2 border-2 border-green-950 text-green-950 bg-white hover:bg-gray-300 hover:text-black transition-colors duration-300">White Gold</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6 flex space-x-4">
+                    <button class="px-6 py-2 border-2 border-emerald-900 bg-white text-emerald-900 hover:bg-emerald-900 hover:text-white transition-colors duration-300">Add to Cart</button>
+                    <button class="px-6 py-2 border-2 border-emerald-900 bg-emerald-900 text-white bg-green-950 hover:bg-white hover:text-black transition-colors duration-300">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="mt-12">
+            <h3 class="text-xl font-semibold text-gray-800">Additional Information</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+                <div class="p-4 bg-white h-80 shadow-md rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800">Product Description</h4>
+                    <p class="text-gray-600 mt-2">Details about the product's materials, craftsmanship, and design inspiration.</p>
+                </div>
+                <div class="p-4 bg-white shadow-md rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800">Warranty & Care</h4>
+                    <p class="text-gray-600 mt-2">Information about warranty coverage and care instructions.</p>
+                </div>
+                <div class="p-4 bg-white shadow-md rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800">Shipping & Returns</h4>
+                    <p class="text-gray-600 mt-2">Policies for shipping, delivery timelines, and return process.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-12">
+            <h3 class="text-xl font-semibold text-gray-800">You May Also Like</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
+                <div class="p-4 bg-white shadow-md rounded-lg">
+                    <img src="zennah placeholder.png" alt="Product 1" class="w-full rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800 mt-4">Product 1</h4>
+                    <p class="text-gray-600">Rs 40,000</p>
+                </div>
+                <div class="p-4 bg-white shadow-md rounded-lg">
+                    <img src="zennah placeholder.png" alt="Product 2" class="w-full rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800 mt-4">Product 2</h4>
+                    <p class="text-gray-600">Rs 45,000</p>
+                </div>
+                <div class="p-4 bg-white shadow-md rounded-lg">
+                    <img src="zennah placeholder.png" alt="Product 3" class="w-full rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800 mt-4">Product 3</h4>
+                    <p class="text-gray-600">Rs 55,000</p>
+                </div>
+                <div class="p-4 bg-white shadow-md rounded-lg">
+                    <img src="zennah placeholder.png" alt="Product 4" class="w-full rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800 mt-4">Product 4</h4>
+                    <p class="text-gray-600">Rs 60,000</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
+    <script>
+        // JavaScript for Horizontal Slideshow
+        const slidesWrapper = document.getElementById("slidesWrapper");
+        const slides = document.querySelectorAll(".slide");
+        const dots = document.querySelectorAll(".dot");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+    
+        let currentIndex = 0;
+    
+        // Function to update the slide position
+        function updateSlidePosition() {
+          slidesWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+          dots.forEach((dot, index) => {
+            dot.classList.toggle("bg-gray-800", index === currentIndex);
+            dot.classList.toggle("bg-gray-300", index !== currentIndex);
+          });
+        }
+    
+        // Show the next slide
+        function nextSlide() {
+          currentIndex = (currentIndex + 1) % slides.length;
+          updateSlidePosition();
+        }
+    
+        // Show the previous slide
+        function prevSlide() {
+          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+          updateSlidePosition();
+        }
+    
+        // Dot navigation
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            currentIndex = index;
+            updateSlidePosition();
+          });
+        });
+    
+        // Add event listeners for buttons
+        prevBtn.addEventListener("click", prevSlide);
+        nextBtn.addEventListener("click", nextSlide);
+    
+        // Auto-slide every 3 seconds
+        setInterval(nextSlide, 3000);
+      </script>
+</body>
+</html>

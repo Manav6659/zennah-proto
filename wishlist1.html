@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+  <title>Zennah Layout</title>
+</head>
+    <body class="bg-gray-50">
+        <!-- Header Section -->
+        <header class="relative z-10 bg-green-950 backdrop-blur-md shadow-md">
+          <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <!-- Logo -->
+            <div class="flex items-center">
+              <img src="zennah render 1.91.png" alt="Logo" class="w-20 h-20 mr-2">
+              
+            </div>
+            <!-- Links -->
+            <nav class="hidden md:flex space-x-6">
+              <a href="#" class="text-white hover:text-gray-400 text-sm">About Us</a>
+              <a href="#" class="text-white hover:text-gray-400 text-sm">Feedback/Reviews</a>
+              <a href="#" class="text-white hover:text-gray-400 text-sm">Our Services</a>
+            </nav>
+            <!-- Icons -->
+            <div class="flex items-center space-x-4">
+              <button class="text-gray-100 hover:text-gray-400 text-lg">
+                <svg class="w-[33px] h-[33px] text-gray-800 hover:text-gray-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/>
+                </svg>
+                
+                
+              </button>
+              <button class="text-gray-100 hover:text-gray-400 text-lg">
+                  <svg class="w-[33px] h-[33px] text-gray-800 hover:text-gray-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4h1.5L8 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm.75-3H7.5M11 7H6.312M17 4v6m-3-3h6"/>
+                  </svg>
+              
+                
+              </button>
+              <button class="text-gray-100 hover:text-white text-lg">
+                <svg class="w-[33px] h-[33px] text-gray-800 hover:text-gray-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0a8.949 8.949 0 0 0 4.951-1.488A3.987 3.987 0 0 0 13 16h-2a3.987 3.987 0 0 0-3.951 3.512A8.948 8.948 0 0 0 12 21Zm3-11a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                </svg>
+                
+              </button>
+            </div>
+          </div>
+        </header>
+
+    <div class="bg-gray-50 min-h-screen py-8 px-6">
+        <div class="max-w-7xl mx-auto">
+          <!-- Breadcrumb -->
+          <nav class="text-sm text-gray-500">
+            <a href="Third.html" class="hover:underline">Home</a> /
+            <span class="text-gray-700">Wishlist</span>
+          </nav>
+      
+          <!-- Page Title -->
+          <h1 class="text-4xl font-serif font-bold mt-4">Wishlist</h1>
+      
+          <!-- Grid Layout -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+            <!-- Card 1 -->
+            <div class="group relative border rounded-lg overflow-hidden shadow-sm hover:shadow-lg">
+              <a href="wishlist folder.html">
+                <img
+                  src="zennah placeholder.png"
+                  alt="Girlfriend Gift"
+                  class="object-cover w-full h-48"
+                />
+              </a>
+              <button
+                class="absolute top-2 right-2 p-2 rounded-full bg-white text-gray-400 hover:text-red-500 hover:shadow-md"
+                aria-label="Delete"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <div class="p-4">
+                <h3 class="text-lg font-medium">Girlfriend Gift</h3>
+                <p class="text-gray-500 text-sm">7 saved</p>
+              </div>
+              <div class="absolute  border-2 hover:border-pink-500  "></div>
+            </div>
+      
+            <!-- Card 2 -->
+            <div class="group relative border rounded-lg overflow-hidden shadow-sm hover:shadow-lg">
+              <button>
+                <img
+                  src="zennah placeholder.png"
+                  alt="Girlfriend Gift"
+                  class="object-cover w-full h-48"
+                />
+              </button>
+              <button
+                class="absolute top-2 right-2 p-2 rounded-full bg-white text-gray-400 hover:text-red-500 hover:shadow-md"
+                aria-label="Delete"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <div class="p-4">
+                <h3 class="text-lg font-medium">Wedding Jewelry</h3>
+                <p class="text-gray-500 text-sm">18 saved</p>
+              </div>
+            </div>
+      
+            <!-- Card 3 -->
+            <div class="group relative border rounded-lg overflow-hidden shadow-sm hover:shadow-lg">
+              <button>
+                <img
+                  src="zennah placeholder.png"
+                  alt="Girlfriend Gift"
+                  class="object-cover w-full h-48"
+                />
+              </button>
+              <button
+                class="absolute top-2 right-2 p-2 rounded-full bg-white text-gray-400 hover:text-red-500 hover:shadow-md"
+                aria-label="Delete"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <div class="p-4">
+                <h3 class="text-lg font-medium">Brooches</h3>
+                <p class="text-gray-500 text-sm">13 saved</p>
+              </div>
+            </div>
+      
+            <!-- Card 4 -->
+            <div class="group relative border rounded-lg overflow-hidden shadow-sm hover:shadow-lg">
+              <button>
+                <img
+                  src="zennah placeholder.png"
+                  alt="Girlfriend Gift"
+                  class="object-cover w-full h-48"
+                />
+              </button>
+              <button
+                class="absolute top-2 right-2 p-2 rounded-full bg-white text-gray-400 hover:text-red-500 hover:shadow-md"
+                aria-label="Delete"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <div class="p-4">
+                <h3 class="text-lg font-medium">Christmas Presents</h3>
+                <p class="text-gray-500 text-sm">5 saved</p>
+              </div>
+            </div>
+      
+            <!-- Add New Card -->
+            <div
+              class="flex items-center justify-center border-2 border-dashed border-gray-300 rounded-lg bg-gray-100 hover:border-gray-500 cursor-pointer"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+              <span class="sr-only">Add New</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+</body>
+</html>

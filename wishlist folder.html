@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+  <title>Zennah Layout</title>
+</head>
+<body class="bg-gray-50">
+  <header class="relative z-10 bg-green-950 backdrop-blur-md shadow-md">
+    <div class="container mx-auto flex items-center justify-between py-4 px-6">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="zennah render 1.91.png" alt="Logo" class="w-20 h-20 mr-2">
+        
+      </div>
+      <!-- Links -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="#" class="text-white hover:text-gray-400 text-sm">About Us</a>
+        <a href="#" class="text-white hover:text-gray-400 text-sm">Feedback/Reviews</a>
+        <a href="#" class="text-white hover:text-gray-400 text-sm">Our Services</a>
+      </nav>
+      <!-- Icons -->
+      <div class="flex items-center space-x-4">
+        <button class="text-gray-100 hover:text-gray-400 text-lg">
+          <svg class="w-[33px] h-[33px] text-gray-800 hover:text-gray-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/>
+          </svg>
+          
+          
+        </button>
+        <button class="text-gray-100 hover:text-gray-400 text-lg">
+            <svg class="w-[33px] h-[33px] text-gray-800 hover:text-gray-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4h1.5L8 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm.75-3H7.5M11 7H6.312M17 4v6m-3-3h6"/>
+            </svg>
+        
+          
+        </button>
+        <button class="text-gray-100 hover:text-white text-lg">
+          <svg class="w-[33px] h-[33px] text-gray-800 hover:text-gray-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0a8.949 8.949 0 0 0 4.951-1.488A3.987 3.987 0 0 0 13 16h-2a3.987 3.987 0 0 0-3.951 3.512A8.948 8.948 0 0 0 12 21Zm3-11a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+          </svg>
+          
+        </button>
+      </div>
+    </div>
+  </header>
+
+    <div class="bg-gray-50 min-h-screen py-8 px-6">
+        <div class="max-w-7xl mx-auto">
+          <!-- Header Section -->
+          <header class="flex items-center justify-between mb-6">
+            <div>
+              <!-- Breadcrumb -->
+              <nav class="text-sm text-gray-500">
+                <a href="Third.html" class="hover:underline">Home</a> /
+                <a href="wishlist1.html" class="hover:underline">Design Boards</a> /
+                <span class="text-gray-700">Girlfriend Gift</span>
+              </nav>
+              <!-- Page Title -->
+              <h1 class="text-4xl font-serif font-bold mt-2">Girlfriend Gift</h1>
+            </div>
+            <!-- Toggle Collaboration -->
+        
+            <div class="flex items-center">
+                <span class="text-sm text-gray-600 pr-2">Allow collaboration</span>
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" class="sr-only peer" />
+                  <div class="w-9 h-6 bg-gray-300 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-green-950 rounded-full peer peer-checked:bg-green-950"></div>
+                  <div class="absolute w-4 h-4 bg-white rounded-full transition-transform transform peer-checked:translate-x-5"></div>
+                </label>
+              </div>
+              
+          </header>
+      
+          <!-- Content Section -->
+          <div class="space-y-12">
+            <!-- Product Card 1 -->
+            <div class="flex flex-col lg:flex-row items-start gap-6 bg-white rounded-lg shadow-md p-6">
+              <!-- Image Section -->
+              <div class="relative">
+                <img
+                  src="zennah placeholder.png"
+                  alt="Ring"
+                  class="w-full max-w-md rounded-lg"
+                />
+                <!-- Share Icon -->
+                <button
+                  class="absolute top-2 left-2 p-2 bg-white rounded-full shadow text-gray-500 hover:text-indigo-500"
+                  aria-label="Share"
+                >
+                  <svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 15v2a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-2M12 4v12m0-12 4 4m-4-4L8 8"/>
+                  </svg>
+                  
+                  
+                </button>
+              </div>
+              <!-- Description Section -->
+              <div class="flex-1">
+                <h2 class="text-xl font-semibold">Title | Price</h2>
+                <p class="text-gray-500 text-sm mt-2">
+                  Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed pellentesque arcu.
+                  Malesuada in laucibus risus velit diam.
+                </p>
+                <!-- Accordion -->
+                <div class="mt-4 space-y-2">
+                  <details class="group">
+                    <summary class="flex justify-between items-center cursor-pointer p-2 rounded-lg bg-gray-100 hover:bg-gray-200">
+                      <span>Product description</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 group-open:rotate-180 transition-transform"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </summary>
+                    <div class="p-4 text-sm text-gray-600">
+                      Product details go here.
+                    </div>
+                  </details>
+                  <details class="group">
+                    <summary class="flex justify-between items-center cursor-pointer p-2 rounded-lg bg-gray-100 hover:bg-gray-200">
+                      <span>Maintenance and Shipping & Returns</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 group-open:rotate-180 transition-transform"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </summary>
+                    <div class="p-4 text-sm text-gray-600">
+                      Maintenance and shipping details go here.
+                    </div>
+                  </details>
+                  
+                </div>
+                <!-- Buttons -->
+                <div class="mt-6 flex items-center gap-4">
+                  <button
+                    class="py-2 px-4 border-2 border-emerald-900 bg-white text-emerald-900 hover:bg-emerald-900 hover:text-white transition-colors duration-300"
+                  >
+                    Add to Cart
+                  </button>
+                  <button
+                    class="py-2 px-4 border-2 border-emerald-900 bg-emerald-900 text-white bg-green-950 hover:bg-white hover:text-black transition-colors duration-300"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Product Card 2 -->
+            <div class="flex flex-col lg:flex-row items-start gap-6 bg-white rounded-lg shadow-md p-6">
+              <!-- Image Section -->
+              <div class="relative">
+                <img
+                  src="zennah placeholder.png"
+                  alt="Ring"
+                  class="w-full max-w-md rounded-lg"
+                />
+                <!-- Share Icon -->
+                <button
+                  class="absolute top-2 left-2 p-2 bg-white rounded-full shadow text-gray-500 hover:text-indigo-500"
+                  aria-label="Share"
+                >
+                  <svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 15v2a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-2M12 4v12m0-12 4 4m-4-4L8 8"/>
+                  </svg>
+                </button>
+              </div>
+              <!-- Description Section -->
+              <div class="flex-1">
+                <h2 class="text-xl font-semibold">Title | Price</h2>
+                <p class="text-gray-500 text-sm mt-2">
+                  Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed pellentesque arcu.
+                  Malesuada in laucibus risus velit diam.
+                </p>
+                <!-- Accordion -->
+                <div class="mt-4 space-y-2">
+                  <details class="group">
+                    <summary class="flex justify-between items-center cursor-pointer p-2 rounded-lg bg-gray-100 hover:bg-gray-200">
+                      <span>Product description</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 group-open:rotate-180 transition-transform"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </summary>
+                    <div class="p-4 text-sm text-gray-600">
+                      Product details go here.
+                    </div>
+                  </details>
+                  <details class="group">
+                    <summary class="flex justify-between items-center cursor-pointer p-2 rounded-lg bg-gray-100 hover:bg-gray-200">
+                      <span>Maintenance and Shipping & Returns</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 group-open:rotate-180 transition-transform"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </summary>
+                    <div class="p-4 text-sm text-gray-600">
+                      Maintenance and shipping details go here.
+                    </div>
+                  </details>
+                  <details class="group">
+                    <summary class="flex justify-between items-center cursor-pointer p-2 rounded-lg bg-gray-100 hover:bg-gray-200">
+                      <span>User Reviews</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 group-open:rotate-180 transition-transform"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </summary>
+                    <div class="p-4 text-sm text-gray-600">
+                      User reviews go here.
+                    </div>
+                  </details>
+                </div>
+                <!-- Buttons -->
+                <div class="mt-6 flex items-center gap-4">
+                  <button
+                    class="py-2 px-4 border-2 border-emerald-900 bg-white text-emerald-900 hover:bg-emerald-900 hover:text-white transition-colors duration-300"
+                  >
+                    Add to Cart
+                  </button>
+                  <button
+                    class="py-2 px-4 border-2 border-emerald-900 bg-emerald-900 text-white bg-green-950 hover:bg-white hover:text-black transition-colors duration-300"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+</body>
+</html>
